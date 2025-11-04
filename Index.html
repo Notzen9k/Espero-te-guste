@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para María Trovato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="adivinanzas">
+    <div id="seccion-adivinanzas">
+        <h1>¡Hola, María!</h1>
+        <div id="pregunta-1" class="pregunta">¿Podrías decirme quién es la niña de mis ojos?</div>
+        <button class="opcion" onclick="responder(1, 'Tú')">Tú</button>
+        <button class="opcion" onclick="responder(1, 'Otra')">Otra</button>
+        
+        <div id="pregunta-2" class="pregunta oculto">¿Quién me hace sonreír cada día sin importar la distancia?</div>
+        <button class="opcion oculto" onclick="responder(2, 'Tú')">Tú</button>
+        <button class="opcion oculto" onclick="responder(2, 'Otra')">Otra</button>
+        
+        <div id="pregunta-3" class="pregunta oculto">¿A quién le dedico mis pensamientos más dulces?</div>
+        <button class="opcion oculto" onclick="responder(3, 'Tú')">Tú</button>
+        <button class="opcion oculto" onclick="responder(3, 'Otra')">Otra</button>
+        
+        <div id="pregunta-4" class="pregunta oculto">¿Quién es mi razón para ser mejor cada día?</div>
+        <button class="opcion oculto" onclick="responder(4, 'Tú')">Tú</button>
+        <button class="opcion oculto" onclick="responder(4, 'Otra')">Otra</button>
+    </div>
+    
+    <div id="seccion-corazones" class="oculto">
+        <h2>Ahora, toca los corazones para descubrir frases de mi corazón...</h2>
+        <div id="corazones-container">
+            <span class="corazon" onclick="mostrarFrase(0)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(1)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(2)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(3)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(4)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(5)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(6)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(7)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(8)">❤️</span>
+            <span class="corazon" onclick="mostrarFrase(9)">❤️</span>
+        </div>
+        <div id="frase-display" class="frase-display"></div>
+        <div class="flecha" id="flecha" onclick="irAFinal()">➡️</div>
+    </div>
+    
+    <div id="seccion-final" class="oculto">
+        <h2>Un lugar especial para nosotros...</h2>
+        <p class="texto-final">María, te amo más que a las estrellas en el cielo, más que a los sueños que tengo por las noches. Eres mi luz en la distancia, mi razón de sonreír, y te seguiré amando y cuidando con todo mi corazón el resto de mis días. Eres mi todo, mi amor eterno.</p>
+        <div class="corazon-final" onclick="mostrarPedida()">💖</div>
+        <div class="pedida" id="pedida">¿Quieres ser mi novia, María Trovato? Eres la persona más maravillosa que he conocido, mi dulce amor, mi compañera perfecta. ¡Di sí y hagamos realidad nuestros sueños juntos! ❤️</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
