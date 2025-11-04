@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: background 1.5s ease, color 1.5s ease;
+    padding: 50px;
+    overflow-x: hidden;
+}
+
+.adivinanzas {
+    background: linear-gradient(45deg, #e0f7fa, #b2ebf2);
+    color: #00695c;
+    animation: fondoAnimado 10s infinite alternate;
+}
+
+.corazones {
+    background: linear-gradient(45deg, #fce4ec, #f8bbd9);
+    color: #ad1457;
+    animation: fondoAnimado 10s infinite alternate;
+}
+
+.final {
+    background: linear-gradient(45deg, #fff3e0, #ffcc80);
+    color: #e65100;
+    animation: fondoAnimado 10s infinite alternate;
+}
+
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.pregunta {
+    font-size: 24px;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.opcion {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.opcion:hover {
+    background: #ff1493;
+    transform: scale(1.1);
+}
+
+.corazon {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    animation: latido 2s infinite;
+}
+
+.corazon:hover {
+    transform: scale(1.2);
+}
+
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.frase-display {
+    font-size: 18px;
+    margin: 20px 0;
+    min-height: 60px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.frase-display.mostrar {
+    opacity: 1;
+}
+
+.flecha {
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: none;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.texto-final {
+    font-size: 20px;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.corazon-final {
+    font-size: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.corazon-final:hover {
+    transform: scale(1.2);
+}
+
+.pedida {
+    font-size: 24px;
+    color: #d81b60;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.oculto {
+    display: none;
+}
